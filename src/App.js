@@ -116,7 +116,7 @@ function App() {
               type="search"
               placeholder="Enter City Name"
               onChange={(e) => {
-                setCityName(e.target.value.toLowerCase());
+                setCityName(e.target.value.trim().toLowerCase());
               }}
             />
             <div className="icon">
@@ -127,7 +127,7 @@ function App() {
             </div>
           </div>
           <div className="errorMsg">
-            <h3>{errorMsg}</h3>
+            <h3 className="errorMsg">{errorMsg}</h3>
           </div>
           <div className="cityAndDate" dir={direction}>
             <h2 className="city">{t(cityName)}</h2>

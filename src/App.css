@@ -91,6 +91,10 @@ p {
   border: 1px solid #ccc !important;
 }
 
+.errorMsg {
+  color: #f00;
+}
+
 @media (max-width: 500px) {
   .tempIcon {
     display: block;
