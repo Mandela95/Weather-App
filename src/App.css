@@ -93,6 +93,7 @@ p {
 
 .errorMsg {
   color: #f00;
+  margin: 0;
 }
 
 @media (max-width: 500px) {
