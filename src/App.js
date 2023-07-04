@@ -90,7 +90,7 @@ function App() {
           setErrorMsg("");
         })
         .catch(function (error) {
-          if (error.response.status === 404 || cityName.length === 0) {
+          if (error.response.status === 404) {
             setErrorMsg("Invalid City Name");
           } else {
             setErrorMsg("");
@@ -101,6 +101,8 @@ function App() {
       return () => {
         cancelAxios();
       };
+    } else {
+      setErrorMsg("Write City Name");
     }
   }
 
