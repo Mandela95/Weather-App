@@ -23,6 +23,11 @@
   align-items: center;
 }
 
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .icon svg {
   font-size: 40px;
